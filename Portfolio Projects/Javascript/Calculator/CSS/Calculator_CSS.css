@@ -1,0 +1,97 @@
+html {
+    font-size: 70%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.calculator {
+    border: 1.2px solid rgb(63, 238, 238);
+    border-radius: 7px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+}
+
+.calculator-screen {
+    width: 100%;
+    font-size: 5rem;
+    height: 80px;
+    border: none;
+    background-color: rgb(63, 238, 238);
+    color: black;
+    text-align: right;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 7px 7px 0px 0px;
+}
+
+button {
+    height: 70px;
+    border-radius: 3px;
+    border: 1px solid rgb(63, 238, 238);
+    background-color: transparent;
+    font-size: 3.2rem;
+    color: black;
+    background-image: linear-gradient(to bottom, transparent, transparent 50%, rgb(63, 238, 238));
+    text-shadow: 0 1px rgba(255, 255, 255, .4);
+    /*Each value below is separated by a coma after the rgba values*/
+    box-shadow: inset 0 0 0 1px rgba(31, 118, 118, 0.05),
+    inset 0 1px 0 0 rgba(31, 118, 118, .05),
+    inset 0 -1px 0 0 rgba(31, 118, 118, .05),
+    0 1px 0 0 rgba(31, 118, 118, .05);
+}
+
+button:hover {
+    background-color: rgb(43, 162, 162);
+}
+
+.operator {
+    color: white;
+    background-image: linear-gradient(to bottom, transparent, transparent 50%, rgba(119, 115, 3, 0.5));
+    background-color: rgb(255, 242, 0);
+    border-color: rgb(207, 197, 2);
+}
+
+.operator:hover {
+    background-color: rgb(128, 122, 20);
+}
+
+.all-clear {
+    background-color: rgb(255, 141, 18);
+    border-color: rgb(131, 69, 2);
+    color: #ffffff;
+    box-shadow: none;
+    background-image: linear-gradient(to bottom, transparent, transparent 50%, rgba(131, 69, 2, 0.5));
+}
+
+.all-clear:hover {
+    background-color: rgb(95, 50, 2);
+}
+
+.equal-sign {
+    background-color: rgb(255, 0, 255);
+    border-color: rgb(121, 2, 121);
+    background-image: linear-gradient(to bottom, transparent, transparent 50%, rgba(121, 2, 121, 0.5));
+    box-shadow: none;
+    color: #fff;
+    height: 100%;
+    grid-area: 2/4/6/5;
+}
+
+.equal-sign:hover {
+    background-color: rgb(75, 2, 75);
+}
+
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}

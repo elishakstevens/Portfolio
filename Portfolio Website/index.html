@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Elisha Stevens</title>
+        <link rel="shortcut icon" type="img/jpg" href="">
+        <link rel="stylesheet" type="text/css" href="./CSS/portfolio.css">
+    </head>
+    <body class="background">
+
+        <!-- NAVBAR -->
+        <div class="navbar">
+            <a class="active" href="#home">Home</a>
+            <a href="#slideshow">Slideshow</a>
+            <a href="#about">About</a>
+            <a href="#github">GitHub</a>
+            <!-- onclick and ondblclick functions added to open and close the contact form -->
+            <a onclick="openForm()" ondblclick="closeForm()" class="contact" href="#contact">Contact</a>
+        </div>
+
+        <!-- Background Video -->
+        <div id="home">
+            <video autoplay muted loop id="typing_video">
+                <source src="./Images/Video/typing-close.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!-- Video Text -->
+        <div class="video_text">
+            <h1 class="white-text">Elisha's Portfolio</h1>
+            <strong>
+                <p class="center">
+                    <q>
+                        The computer programmer is a creator of universes for which he alone is the lawgiver.
+                        <br>No playwright, no stage director, no emperor, however powerful, has ever exercised such absolute authority to arrange a stage or
+                        <br>field of battle and to command such unswervingly dutiful actors or troops.
+                    </q>
+                    <br> -Joseph Weizenbaum<br>
+                    <br>
+                    My name is Elisha. Welcome to my portfolio website. On it, I will tell you about my background and experience.
+                    <br>
+                    <br>Thank you for stopping by and enjoy!
+                </p>
+            </strong>
+        </div>
+
+        <!--Slideshow section added-->
+        <div id="slideshow">
+            <div id="slideshow_background">
+                <div id="slideshow_container">
+                    <!--Slide 1 of 6-->
+                    <div class="mySlides fade">
+                        <img class="slideshow_images" src="./Images/photo_of_me.JPG" alt="Picture of Myself">
+                        <div class="text">I'm available to assist you on your project!</div>
+                    </div>
+                    <!--Slide 2 of 6-->
+                    <div class="mySlides fade">
+                        <img class="slideshow_images" src="./Images/HTML_CSS_and_JavaScript.jpeg" alt="HTML, CSS, and JS logos">
+                        <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
+                    </div>
+                    <!--Slide 3 of 6-->
+                    <div class="mySlides fade">
+                        <img class="slideshow_images" src="./Images/Python.png" alt="Python logo">
+                        <div class="text">the popular programming language Python,</div>
+                    </div>
+                    <!--Slide 4 of 6-->
+                    <div class="mySlides fade">
+                        <img class="slideshow_images" src="./Images/C_Sharp_and_Dot_NET.png" alt="C# logo">
+                        <div class="text">C#, .NET Framework, ASP.NET, MVC, </div>
+                    </div>
+                    <!--Slide 5 of 6-->
+                    <div class="mySlides fade">
+                        <img class="slideshow_images" src="./Images/SQL_and_Database.jpg" alt="SQL logo">
+                        <div class="text">back end development, databases and SQL.</div>
+                    </div>
+                    <!--Slide 6 of 6-->
+                    <div class="mySlides fade">
+                        <img class="slideshow_images" src="./Images/station.png" alt="replace with a picture of your choosing">
+                        <div class="text"><a class="white-text contact" onclick="openForm()">Contact me now!</a></div>
+                    </div>
+                    <!--Previous and next buttons-->
+                    <a class="previous" onclick="plusSlides(-1)"> &#10094; </a>
+                    <a class="next" onclick="plusSlides(1)"> &#10095; </a>
+                </div>
+                <br> <!-- Adds a space between the slideshow images and the dots -->
+                <!-- slideshow dots (these are another way for users to navigate through the slideshow)-->
+                <div style="text-align: center;">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <div class="Row" id="about">
+            <!--Left column-->
+            <div class="column_2">
+                <img src="./Images/colorful-laptop.png" alt="manicured woman typing on a laptop">
+            </div>
+            <div class="column_1">
+                <h1>About</h1>
+                <p>
+                    I am a software developer who loves to code! Outside of coding, I also enjoy knitting, dancing, reading and cooking.
+                    <br><br>
+                    I am a graduate of <a href="https://www.learncodinganywhere.com/">The Tech Academy</a>'s Software Developer Bootcamp,
+                    where I trained and gained experience in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more.
+                    <br><br>
+                    I am a full-stack developer and would love to work with you on your project. <br>Contact me below!
+                </p>
+            </div>
+        </div>
+
+        <!-- GitHub Section -->
+        <div class="Row" id="github">
+            <!--Left Column-->
+            <div class="column_1">
+                <h1>GitHub</h1>
+                <p>
+                    Take a look at my previous coding projects on my GitHub profile! Click here:
+                    <br>
+                <p class="center"><a href="https://github.com/elishakstevens/" target="_blank">Elisha's GitHub</a></p>
+                </p>
+            </div>
+            <!--Right Column-->
+            <div class="column_2">
+                <a href="https://github.com/elishakstevens/" target="_blank"><img src="./Images/github-logo.png" alt="GitHub Logo"></a>
+            </div>
+        </div>
+
+        <!--Contact Form-->
+        <div id="contact">
+            <button onclick="openForm()" class="pop_up_button">CONTACT</button>
+            <div class="form-popup" id="myForm">
+                <form action="https://formspree.io/info@learncodinganywhere.com" method="POST" class="form-container">
+                    <h1>Contact</h1>
+                    <label for="name"><b>Name</b></label>
+                    <input type="text" placeholder="Type your name here" name="name" required>
+                    <label for="phone"><b>Phone</b></label>
+                    <input type="text" placeholder="Type your phone number here" name="phone">
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Type you email address here" name="email" required>
+                    <label for="message"><b>Message</b></label>
+                    <input type="text" placeholder="Type your message here" name="message">
+
+                    <button type="submit" class="btn">SUBMIT</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+                </form>
+            </div>
+        </div>
+
+        <!--Footer Section-->
+        <footer>
+            <p>
+            <p class="center">&copy;Elisha Stevens 2024</p>
+            <br>
+            </p>
+        </footer>
+        <script src="JS/portfolio.js"></script>
+
+    </body>
+</html>

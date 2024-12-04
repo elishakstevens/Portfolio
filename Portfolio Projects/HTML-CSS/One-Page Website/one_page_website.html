@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ellie's Pressed Flowers | Studio</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="./css/one_page_website.css">
+		<script src="./JS/one_page_website.js" defer></script>
+	</head>
+	<body>
+		
+		<!-- NAV -->
+		<div>
+			<div>
+				<nav>
+					<a href="#home" id="link" class="nav">HOME</a>
+					<a href="#gallery" class="nav">GALLERY</a>
+					<a href="#video" class="nav">HOW TO</a>
+					<a href="#contact" class="nav">CONTACT</a>
+				</nav>
+			</div>
+		</div>
+		<!-- END NAV -->
+		
+		<!-- HOME -->
+		<div id="home">
+			<div>
+				<h1>Ellie's Pressed Flowers</h1>
+			</div>
+		</div>
+		<!-- END HOME -->
+		
+		<!-- GALLERY -->
+		<!-- Images used to open the lightbox -->
+		<div class="row">
+			<div class="column">
+				<img src="Images/flowers_1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="Images/flowers_2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="Images/flowers_3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+			</div>
+		</div>
+  
+		<!-- The Modal/Lightbox -->
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+		
+				<div class="mySlides">
+					<div class="numbertext">1 / 3</div>
+					<img src="Images/flowers_1_W.jpg" style="width:100%">
+				</div>
+			
+				<div class="mySlides">
+					<div class="numbertext">2 / 3</div>
+					<img src="Images/flowers_2_W.jpg" style="width:100%">
+				</div>
+			
+				<div class="mySlides">
+					<div class="numbertext">3 / 3</div>
+					<img src="Images/flowers_3_W.jpg" style="width:100%">
+				</div>
+			
+				<!-- Next/previous controls -->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			
+				<!-- Caption text -->
+				<div class="caption-container">
+					<p id="caption"></p>
+				</div>
+			
+				<!-- Thumbnail image controls -->
+				<div class="column">
+					<img class="demo" src="Images/flowers_1.jpg" onclick="currentSlide(1)" alt="">
+				</div>
+			
+				<div class="column">
+					<img class="demo" src="Images/flowers_2.jpg" onclick="currentSlide(2)" alt="">
+				</div>
+			
+				<div class="column">
+					<img class="demo" src="Images/flowers_3.jpg" onclick="currentSlide(3)" alt="">
+				</div>
+			</div>
+		</div>
+		<!-- END GALLERY -->
+
+		<!-- HOW TO -->
+		<div id="video">
+			<div>
+				<h2>How We Like to Press Flowers Fast!</h2>
+				<iframe width="1120" height="630" src="https://www.youtube.com/embed/uc4-XoNdDy0?si=2ttpXTlvtPG0SN_v" title="YouTube video player" frameborder="0" 
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+				</iframe>
+			</div>
+		</div>
+		<!-- END HOW TO -->
+		
+		<!-- CONTACT -->
+		<div id="contact">
+			<div>
+				<h2>Contact Me!</h2>
+				<form action="" method="post">
+					<input type="text" placeholder="First Name"><br>
+					<input type="text" placeholder="Last Name"><br>
+					<input type="text" placeholder="Email"><br>
+					<input type="text" placeholder="Phone Number"><br>
+					<textarea name="message" rows="3" cols="10" placeholder="Message"></textarea>
+					<button type="submit" id="submit">SUBMIT</button>
+				</form>
+			</div>
+		</div>
+		<!-- END CONTACT -->
+		
+		<!-- FOOTER -->
+		<div>
+			<a href="https://elishastevens.com/elliesteven-overview" target="new">EllieSteven</a> &nbsp;&nbsp; &copy;2024
+		</div>
+		<!-- END FOOTER -->
+		
+	</body>
+</html>
