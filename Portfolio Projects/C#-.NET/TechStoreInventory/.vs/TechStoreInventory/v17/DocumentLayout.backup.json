@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\elish\\OneDrive\\Documents\\GitHub\\Basic-C-Sharp-Projects\\TechStoreInventory\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CAC9222D-03CA-47B7-8830-C3E51E9AB947}|TechStoreInventory\\TechStoreInventory.csproj|c:\\users\\elish\\onedrive\\documents\\github\\basic-c-sharp-projects\\techstoreinventory\\techstoreinventory\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAC9222D-03CA-47B7-8830-C3E51E9AB947}|TechStoreInventory\\TechStoreInventory.csproj|solutionrelative:techstoreinventory\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAC9222D-03CA-47B7-8830-C3E51E9AB947}|TechStoreInventory\\TechStoreInventory.csproj|c:\\users\\elish\\onedrive\\documents\\github\\basic-c-sharp-projects\\techstoreinventory\\techstoreinventory\\models\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAC9222D-03CA-47B7-8830-C3E51E9AB947}|TechStoreInventory\\TechStoreInventory.csproj|solutionrelative:techstoreinventory\\models\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Products.cs",
+              "DocumentMoniker": "C:\\Users\\elish\\OneDrive\\Documents\\GitHub\\Basic-C-Sharp-Projects\\TechStoreInventory\\TechStoreInventory\\Models\\Products.cs",
+              "RelativeDocumentMoniker": "TechStoreInventory\\Models\\Products.cs",
+              "ToolTip": "C:\\Users\\elish\\OneDrive\\Documents\\GitHub\\Basic-C-Sharp-Projects\\TechStoreInventory\\TechStoreInventory\\Models\\Products.cs",
+              "RelativeToolTip": "TechStoreInventory\\Models\\Products.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T04:18:05.182Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\elish\\OneDrive\\Documents\\GitHub\\Basic-C-Sharp-Projects\\TechStoreInventory\\TechStoreInventory\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "TechStoreInventory\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\elish\\OneDrive\\Documents\\GitHub\\Basic-C-Sharp-Projects\\TechStoreInventory\\TechStoreInventory\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "TechStoreInventory\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T04:04:55.325Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

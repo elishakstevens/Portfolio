@@ -1,0 +1,12 @@
+C:\Users\elish\OneDrive\Documents\GitHub\Basic-C-Sharp-Projects\StudentTracker\StudentTracker\bin\Debug\StudentTracker.exe.config
+C:\Users\elish\OneDrive\Documents\GitHub\Basic-C-Sharp-Projects\StudentTracker\StudentTracker\bin\Debug\StudentTracker.exe
+C:\Users\elish\OneDrive\Documents\GitHub\Basic-C-Sharp-Projects\StudentTracker\StudentTracker\bin\Debug\StudentTracker.pdb
+C:\Users\elish\OneDrive\Documents\GitHub\Basic-C-Sharp-Projects\StudentTracker\StudentTracker\bin\Debug\EntityFramework.dll
+C:\Users\elish\OneDrive\Documents\GitHub\Basic-C-Sharp-Projects\StudentTracker\StudentTracker\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\elish\OneDrive\Documents\GitHub\Basic-C-Sharp-Projects\StudentTracker\StudentTracker\bin\Debug\EntityFramework.xml
+C:\Users\elish\OneDrive\Documents\GitHub\Basic-C-Sharp-Projects\StudentTracker\StudentTracker\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\elish\OneDrive\Documents\GitHub\Basic-C-Sharp-Projects\StudentTracker\StudentTracker\obj\Debug\StudentTracker.csproj.AssemblyReference.cache
+C:\Users\elish\OneDrive\Documents\GitHub\Basic-C-Sharp-Projects\StudentTracker\StudentTracker\obj\Debug\StudentTracker.csproj.CoreCompileInputs.cache
+C:\Users\elish\OneDrive\Documents\GitHub\Basic-C-Sharp-Projects\StudentTracker\StudentTracker\obj\Debug\StudentT.49B335BB.Up2Date
+C:\Users\elish\OneDrive\Documents\GitHub\Basic-C-Sharp-Projects\StudentTracker\StudentTracker\obj\Debug\StudentTracker.exe
+C:\Users\elish\OneDrive\Documents\GitHub\Basic-C-Sharp-Projects\StudentTracker\StudentTracker\obj\Debug\StudentTracker.pdb

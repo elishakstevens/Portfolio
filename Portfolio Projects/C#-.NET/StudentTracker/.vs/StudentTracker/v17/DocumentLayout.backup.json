@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\elish\\OneDrive\\Documents\\GitHub\\Basic-C-Sharp-Projects\\StudentTracker\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CD0F5259-BEEE-4E6B-87B5-DC885A62B3CC}|StudentTracker\\StudentTracker.csproj|c:\\users\\elish\\onedrive\\documents\\github\\basic-c-sharp-projects\\studenttracker\\studenttracker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD0F5259-BEEE-4E6B-87B5-DC885A62B3CC}|StudentTracker\\StudentTracker.csproj|solutionrelative:studenttracker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\elish\\OneDrive\\Documents\\GitHub\\Basic-C-Sharp-Projects\\StudentTracker\\StudentTracker\\Program.cs",
+              "RelativeDocumentMoniker": "StudentTracker\\Program.cs",
+              "ToolTip": "C:\\Users\\elish\\OneDrive\\Documents\\GitHub\\Basic-C-Sharp-Projects\\StudentTracker\\StudentTracker\\Program.cs",
+              "RelativeToolTip": "StudentTracker\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T07:24:29.501Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
