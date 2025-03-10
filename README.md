@@ -1,2 +1,2 @@
-# Portfolio 
-Where I will store all of my coding projects as I complete them through the Software Developer Bootcamp.
+# Software Development Portfolio 
+Features my best work from my studies at the Tech Academy.
