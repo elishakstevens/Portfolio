@@ -1,3 +1,21 @@
+@property --blueviolet-color {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #b82be2;
+}
+
+@property --darkviolet-color {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #8a2be2;
+}
+
+@property --warmwhite-color {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: antiquewhite;
+}
+
 /****GENERAL STYLING****/
 html {
     scroll-behavior: smooth;
@@ -22,18 +40,11 @@ h1 {
     text-transform: uppercase;
     font-family: "Trebuchet MS", Optima;
     text-align: center;
-    margin-top: 3%;
     color: #1a1a1a;
 }
 
-h1:hover {
-    filter: grayscale(5%);
-    transform: scale(1.1);
-    transition: transform 1s;
-}
-
 .white-text {
-    color: #fff;
+    color: var(--warmwhite-color);
     padding-top: 10vh;
 }
 
@@ -46,32 +57,18 @@ p {
     padding-right: 1vw;
 }
 
-p:hover {
-    transition: transform 1s;
-    transform: scale(1.01);
-}
-
 .center {
     text-align: center;
-}
-
-.center:hover {
-    transition: transform 2s;
-    transform: scale(1.1);
+    color: var(--warmwhite-color);
 }
 
 a {
-    color: lavender;
+    color: var(--warmwhite-color);
     cursor: pointer;
     text-decoration: underline;
 }
 
-q {
-    font-style: italic;
-}
-
 img {
-    filter: grayscale(75%);
     border-radius: 8px;
     max-width: 100%;
     max-height: 100%;
@@ -79,68 +76,157 @@ img {
     margin: auto auto auto auto;
 }
 
-img:hover {
-    filter: grayscale(5%);
+footer {
+    padding: 2%;
+    background-color: hotpink;
 }
 
-footer {
-    padding: 1%;
-    background-color: white;
+footer p {
+    color: var(--warmwhite-color);
+    text-align: center;
 }
 /****END GENERAL STYLING****/
 
 /****NAVBAR STYLING****/
 .navbar {
     overflow: hidden;
-    background-color: white;
-    position: fixed;
-    top: 0;
     width: 100%;
     z-index: 1;
-    -webkit-animation: moveNav 5s;
-    animation: moveNav 5s;
-}
-
-@keyframes moveNav {
-    from {left: -100vw;}
-    to {left: 0vw;}
 }
 
 .navbar a {
     float: left;
     display: block;
-    color: rgb(91, 156, 134);
+    color: var(--warmwhite-color);
     padding: .75vw 1vw;
     text-decoration: none;
+    text-transform: lowercase;
     font-family: Avant Garde, Helvetica;
     font-size: 1.5vw;
     text-align: center;
     position: relative;
-    -webkit-animation: moveNavText 5.75s;
-    animation: moveNavText 5.75s;
-}
-
-@keyframes moveNavText {
-    from {top: -100vw;}
-    to {top: 0vw;}
+    vertical-align: middle;
 }
 
 .navbar a:hover {
-    background-color: rgb(91, 156, 134);
-    color: white;
-    font-weight: bold;
+    color: var(--blueviolet-color);
     cursor: pointer;
     transition: 0.5s ease-in;
 }
 
-.navbar a.active {
-    color: white;
-    background-color: rgb(91, 156, 134);
+.navbar a.my-name {
+    font-weight: bold;
+    font-size: 5vw;
 }
+
+.slideshow, .about-portfolio {
+    margin-top: 4.5%;
+}
+
+.nav-right {
+    float: right;
+}
+
+/****CONTACT FORM STYLING****/
+.pop_up_button {
+    width: 15vw;
+    background-color: var(--darkviolet-color);
+    color: var(--warmwhite-color);
+    border: solid var(--warmwhite-color);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.form-popup {
+    z-index: 8;
+    display: none;
+    position: fixed;
+    bottom: .5vw;
+    right: .5vw;
+    text-align: left;
+}
+
+.form-popup label {
+    text-align: left;
+    color: black;
+}
+
+.form-container {
+    max-width: 49vw;
+    padding: 1vw;
+    background-color: var(--warmwhite-color);
+    border-radius: 20px;
+}
+
+.form-container input[type=text] {
+    width: 100%;
+    padding: .93vw;
+    margin: .6vw 0 .6vw 0;
+    border: none;
+    background: Gainsboro;
+    font-size: 1vw;
+    background-color: var(--warmwhite-color);
+    border: solid var(--darkviolet-color);
+    color: var(--darkviolet-color);
+}
+
+::placeholder {
+    color: var(--darkviolet-color);
+}
+
+button {
+    font-family: "Trebuchet MS", Optima;
+    letter-spacing: .3vw;
+    font-size: 1.5vw;
+    font-weight: bold;
+    padding: 1.5vw;
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+}
+
+button:hover {
+    color: var(--darkviolet-color);
+    background-color: var(--warmwhite-color);
+    transition-duration: 1s;
+    -webkit-transition-duration: 1s;
+    border-color: var(--darkviolet-color);
+}
+
+.form-container .btn:hover {
+    color: var(--warmwhite-color);
+    background-color: var(--darkviolet-color);
+    transition-duration: 1s;
+    -webkit-transition-duration: 1s;
+    border-color: var(--warmwhite-color);
+}
+
+.form-container .btn {
+    background-color: var(--warmwhite-color);
+    color: var(--darkviolet-color);
+    border-color: var(--darkviolet-color);
+    margin-bottom: 1vh;
+}
+
+.form-container .cancel {
+    background-color: var(--darkviolet-color);
+    color: var(--warmwhite-color);
+    border-color: var(--darkviolet-color);
+}
+
+.form-container .cancel:hover {
+    color: var(--darkviolet-color);
+    background-color: var(--warmwhite-color);
+    transition-duration: 1s;
+    -webkit-transition-duration: 1s;
+    border-color: var(--darkviolet-color);
+}
+/****END CONTACT FORM STYLING****/
+
 /****END OF NAVBAR STYLING****/
 
 /****VIDEO STYLING****/
-#typing_video {
+#web_video {
     position: fixed;
     right: 0;
     bottom: 0;
@@ -148,8 +234,8 @@ footer {
     z-index: -1;
 }
 
-@media screen and (max-width: 576px) {
-    #typing_video {
+@media screen and (max-width: 400px) {
+    #web_video {
         display: none;
     }
 }
@@ -157,23 +243,60 @@ footer {
 .video_text {
     background: rgba(0, 0, 0, 0.5);
     color: white;
-    width: 100%;
-    height: 100vh;
-    padding-top: 2vh;
+    width: 70%;
+    height: 40vh;
+    margin-left: 15%;
+    padding-top: -1.7vh;
+    margin-top: 10vh;
     position: relative;
-    -webkit-animation: moveVideoText 5.75s;
-    animation: moveVideoText 5.75s;
+    -webkit-animation: moveVideoText 3s;
+    animation: moveVideoText 3s;
+}
+
+@-webkit-keyframes moveVideoText {
+    from {top: -50vw;}
+    to {top: 0vw;}
 }
 
 @keyframes moveVideoText {
-    from {top: -100vw;}
+    from {top: -50vw;}
     to {top: 0vw;}
 }
+
+q {
+    font-style: italic;
+}
+
+.quote p {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.quote {
+    background-color: hotpink;
+    z-index: 10;
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-bottom: -1.7%;
+}
+
+path {
+    fill: var(--blueviolet-color);
+    opacity: 40%;
+}
+
+svg {
+    margin-top: -80%;
+    margin-bottom: -12%;
+}
+
 /****END VIDEO STYLING****/
 
 /****SLIDESHOW STYLING****/
 #slideshow_background {
     background: rgba(255, 255, 255, 0.35);
+
 }
 
 .mySlides {
@@ -181,9 +304,10 @@ footer {
 }
 
 #slideshow_container {
-    width: 39.5vw;
+    width: 40vw;
     height: auto;
     padding-top: 4%;
+    padding-bottom: 3%;
     position: relative;
     margin: auto;
 }
@@ -205,7 +329,7 @@ footer {
     top: 50%;
     width: auto;
     padding: 2vw;
-    color: darkgray;
+    color: var(--blueviolet-color);
     font-weight: bold;
     font-size: 1.5vw;
     border-radius: 0 3px 3px 0;
@@ -219,12 +343,12 @@ footer {
 }
 
 .previous:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
+    background-color: var(--blueviolet-color);
+    color: var(--warmwhite-color);
 }
 
 .text {
-    color: white;
+    color: var(--blueviolet-color);
     padding: 1vw;
     position: absolute;
     bottom: 0;
@@ -233,9 +357,9 @@ footer {
     font-family: Perpetua, Rockwell Extra Bold;
     letter-spacing: .1vw;
     font-size: 1.5vw;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: var(--warmwhite-color);
     font-weight: bold;
-    border-radius: 0px 0px 7px 7px; 
+    border-radius: 0px 0px 7px 7px;
 }
 
 .dot {
@@ -248,10 +372,11 @@ footer {
     display: inline-block;
     transition: background-color 0.6 ease;
     z-index: 1;
+    margin-bottom: 3%;
 }
 
 .active, .dot:hover {
-    background-color: black;
+    background-color: var(--blueviolet-color);
 }
 
 .fade {
@@ -282,20 +407,20 @@ footer {
     width: 50%;
     padding: 1.6%;
     height: 450px;
-    background-color: rgb(91, 156, 134);
-    color: white;
+    background-color: var(--blueviolet-color);
+    color: var(--warmwhite-color);
 }
 
 .column_1 h1 {
-    color: white;
+    color: var(--warmwhite-color);
 }
 
 .column_2 {
+    background-color: var(--warmwhite-color);
     float: left;
     width: 50%;
     padding: 1.6%;
     height: 450px;
-    background-color: #4d4d4d;
 }
 
 .row:after {
@@ -305,101 +430,6 @@ footer {
 }
 /****END TABLE STYLING****/
 
-/****CONTACT FORM STYLING****/
-.pop_up_button {
-    position: fixed;
-    bottom: 1.75vw;
-    right: 1.75vw;
-    width: 25vw;
-    background-color: rgb(91, 156, 134);
-    color: white;
-    border: solid white;
-    cursor: pointer;
-    -webkit-animation: movePopup 5s;
-    animation: movePopup 5s;
-}
-
-@keyframes movePopup {
-    from {right: -40vw;}
-    to {right: 1.75vw;}
-}
-
-@-webkit-keyframes movePopup {
-    from {right: -40vw;}
-    to {right: 1.75vw;}
-}
-
-.form-popup {
-    z-index: 8;
-    display: none;
-    position: fixed;
-    bottom: .5vw;
-    right: .5vw;
-}
-
-.form-container {
-    max-width: 49vw;
-    padding: 1vw;
-    background-color: white;
-}
-
-.form-container input[type=text] {
-    width: 100%;
-    padding: .93vw;
-    margin: .6vw 0 .6vw 0;
-    border: none;
-    background: Gainsboro;
-    font-size: 1vw;
-}
-
-button {
-    font-family: "Trebuchet MS", Optima;
-    letter-spacing: .3vw;
-    font-size: 1.5vw;
-    font-weight: bold;
-    padding: 1.5vw;
-    cursor: pointer;
-    width: 100%;
-    height: auto;
-}
-
-button:hover {
-    color: rgb(91, 156, 134);
-    background-color: white;
-    transition-duration: 1s;
-    -webkit-transition-duration: 1s;
-    border-color: rgb(91, 156, 134);
-}
-
-.form-container .btn:hover {
-    color: white;
-    background-color: rgb(91, 156, 134);
-    transition-duration: 1s;
-    -webkit-transition-duration: 1s;
-    border-color: white;
-}
-
-.form-container .btn {
-    background-color: white;
-    color: rgb(91, 156, 134);
-    border-color: rgb(91, 156, 134);
-    margin-bottom: 1vh;
-}
-
-.form-container .cancel {
-    background-color: rgb(91, 156, 134);
-    color: white;
-    border-color: rgb(91, 156, 134);
-}
-
-.form-container .cancel:hover {
-    color: rgb(91, 156, 134);
-    background-color: white;
-    transition-duration: 1s;
-    -webkit-transition-duration: 1s;
-    border-color: rgb(91, 156, 134);
-}
-/****END CONTACT FORM STYLING****/
 
 /****MEDIA QUERY****/
 @media screen and (max-width: 527px) {
